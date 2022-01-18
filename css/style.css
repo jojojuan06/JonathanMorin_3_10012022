@@ -6,4 +6,6 @@ body, html {
 
 /* MOBIL FIRST MEDIA QUERIES*/
 
-/*# sourceMappingURL=style.css.map */
+@media screen and (min-width:768px){
+  
+}
