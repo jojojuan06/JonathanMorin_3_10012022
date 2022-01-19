@@ -1,0 +1,90 @@
+// Fonctionement
+.book_menu
+{ 
+  padding: 32px;
+  text-align: center;
+  background-color: #fafafa;
+h2
+{
+font-size: 24px;
+}
+&._menu_title
+{
+  margin: 0;  
+}
+&._subtitle
+{
+  font-weight: 300;
+  margin: 24px 0;
+}
+}
+.book_btn
+{
+  border: 0;
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 17.6px;
+  border-radius: 100px;
+  color: #fff;
+  background-color: #686868;
+  background: linear-gradient(to bottom,#9356DC, #FF79DA );
+  cursor: pointer;
+  box-shadow: 4px 4px 10px;
+}
+.container
+{
+max-width: 1440px;
+margin: auto;
+}
+.function
+{
+padding: 32px 16px;
+
+&._list  
+{
+margin: 0;
+padding: 0;
+}
+ol
+{
+display: flex; 
+flex-wrap: wrap;
+list-style: none;
+counter-reset: section; 
+li
+{
+padding: 24px;
+margin: 16px 0 16px 32px;
+box-shadow: 4px 4px 8px rgb(0 0 0 / 13%);
+border-radius: 20px;
+background-color: #f6f6f6;
+position: relative; 
+flex-grow: 1;
+max-width: 400px;
+width: auto;
+
+
+
+&::before {
+  counter-increment: section;                /* On incrémente le compteur section */
+  content: counters(section,".") " "; 
+  background: #9356dc;
+  height: 24px;
+  width: 24px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: absolute;
+  left: -12px;
+}
+}
+}
+}
+
+.fa-mobile-alt.fas,.fa-list-ul.fas,.fa-store.fas
+{
+margin-right: 16px;
+color: #7e7e7e;
+}

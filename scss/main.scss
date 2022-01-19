@@ -1,9 +1,12 @@
-body, html {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
-  }
+ @import "./base/base";
+ @import "./components/cards";
+ @import "./layout/header";
+ @import "./pages/function";
+ @import "./layout/footer";
 
+
+
+ 
 /* MOBIL FIRST MEDIA QUERIES*/
 
   @media screen and (min-width:768px){

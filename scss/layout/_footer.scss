@@ -1,0 +1,55 @@
+// FOOTER
+.footer
+  {
+  margin-top: 32px;
+  background-color: #353535;
+  display: flex;
+  width: 100%;
+  gap: 20vw;
+  font-size: smaller;
+  padding: 16px;
+  flex-wrap: wrap;
+  text-align: left;
+  text-decoration: none;
+  color: #fff;
+  
+  &_container
+  {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  }
+  span {
+    color: #fff;
+    font-family: Shrikhand,"cursive";
+    font-size: 19.2px;
+    margin: 0 0 16px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  a
+  {
+  color: #fff;
+  text-decoration: none;
+  }  
+  }
+  li:first-child
+  {
+    margin-top: 0;
+  }
+  li {
+    margin: 8px 0;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+}
+.fa-utensils.fas,.fa-hands-helping.fas
+{
+width: 19.2px;
+margin-right: 8px; 
+font-weight: 900;
+}

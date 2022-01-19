@@ -1,0 +1,18 @@
+// CARD MENU
+.card_menus
+{
+background-color: #f6f6f6;
+ 
+& .card{
+  border:1px solid black;
+  height: 64px;
+  flex-grow: 1;
+  min-width: 480px;
+}
+&_list
+{
+ display:flex; 
+ gap: 32px;
+ flex-wrap: wrap;
+}
+}
