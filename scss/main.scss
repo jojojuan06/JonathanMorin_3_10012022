@@ -1,14 +1,11 @@
  @import "./base/base";
  @import "./components/cards";
+ @import "./components/media";
  @import "./layout/header";
  @import "./pages/function";
  @import "./layout/footer";
+ 
 
 
 
  
-/* MOBIL FIRST MEDIA QUERIES*/
-
-  @media screen and (min-width:768px){
-    
-  }
