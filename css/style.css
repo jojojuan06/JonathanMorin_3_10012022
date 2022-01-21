@@ -6,6 +6,10 @@ body {
   box-sizing: border-box;
 }
 
+main h1 {
+  font-family: "Shrikhand", "sans-serif";
+}
+
 .card_badge {
   background-color: #99e2d0;
   color: #1b6150;
@@ -188,6 +192,32 @@ body {
   display: flex;
   align-self: center;
   font-weight: 700;
+}
+
+.card_header_heart {
+  position: relative;
+}
+.card_header_heart i {
+  font-size: 32px;
+  position: absolute;
+  right: 16px;
+  cursor: pointer;
+}
+.card_header_heart .fas {
+  color: transparent;
+  background-image: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  opacity: 0;
+  transition: transform 500ms;
+}
+.card_header_heart:hover .fas {
+  opacity: 1;
+  transform: scale(1);
+}
+.card_header_heart:hover .far {
+  opacity: 0;
 }
 
 /* MOBIL FIRST MEDIA QUERIES*/
