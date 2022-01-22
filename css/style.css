@@ -1,10 +1,10 @@
 @charset "UTF-8";
 @keyframes spin_checking {
   0% {
-    transform: rotate(-270);
+    transform: rotate(-270deg);
   }
   100% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
 }
 @keyframes menu_item {
@@ -186,6 +186,7 @@ main h1 {
   flex-grow: 1;
   padding: 0 16px;
   max-width: 384px;
+  flex-basis: 50%;
 }
 .card_sub_menu h2 {
   position: relative;
@@ -228,8 +229,8 @@ main h1 {
 .card_list_item:hover .card_checking {
   margin: 0;
 }
-.card_list_item:hover i {
-  animation: spin_checking 0.5s both;
+.card_list_item:hover .card_checking_icon {
+  animation: spin_checking 1s ease;
 }
 
 .card_item_price {

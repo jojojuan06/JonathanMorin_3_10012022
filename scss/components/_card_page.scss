@@ -25,8 +25,6 @@ font-size: 19.2px;
 color: #000;  
 cursor: pointer; 
 }
-
-
 .card_menu_container
 {
 margin: -64px 16px 0px 16px;
@@ -80,7 +78,7 @@ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.50);
 flex-grow: 1;
 padding: 0 16px;
 max-width: 384px;
-// flex-basis: 30%;
+flex-basis: 50%;
 h2
 {
 position: relative;  
@@ -124,15 +122,12 @@ margin:0;
 {
 overflow: hidden;
 }
-&:hover {
-.card_checking {
+&:hover .card_checking {
 margin:0;  
 }
-i
-{
-animation: spin_checking 0.5s both;
+&:hover .card_checking_icon{
+animation: spin_checking 1s ease;
 } 
-}
 }
 .card_item_price
 {
