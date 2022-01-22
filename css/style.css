@@ -9,10 +9,12 @@
 }
 @keyframes menu_item {
   0% {
-    transform: scale(0);
+    transform: translateY(50%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0%);
+    opacity: 1;
   }
 }
 body {
@@ -290,7 +292,7 @@ main h1 {
 }
 
 .card_list_item {
-  animation: menu_item 1s;
+  animation: menu_item 0.5s both;
 }
 .card_list_item.one {
   animation-delay: 0s;
