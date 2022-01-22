@@ -81,34 +81,18 @@ main h1 {
 }
 .card_menus_description {
   position: relative;
+  justify-content: space-between;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   padding: 16px;
 }
 .card_menus_description h3, .card_menus_description p {
   margin: 0;
 }
-.card_menus_description i {
-  font-size: 32px;
-  position: absolute;
-  right: 16px;
-  cursor: pointer;
-}
-.card_menus_description .fas {
-  color: transparent;
-  background-image: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  position: absolute;
-  opacity: 0;
-  transition: transform 500ms;
-}
-.card_menus_description:hover .fas {
-  opacity: 1;
-  transform: scale(1);
-}
-.card_menus_description:hover .far {
-  opacity: 0;
+
+.card_menus_description_title {
+  display: flex;
+  flex-direction: column;
 }
 
 .card_Page_img {
@@ -242,12 +226,12 @@ main h1 {
 }
 
 .card_header_heart {
+  display: flex;
   position: relative;
+  align-self: auto;
 }
 .card_header_heart i {
   font-size: 32px;
-  position: absolute;
-  right: 16px;
   cursor: pointer;
 }
 .card_header_heart .fas {
