@@ -1,8 +1,10 @@
  @import "./utils/variables";
  @import "./utils/mixins";
+ @import "./utils/keyframes";
  @import "./base/base";
  @import "./components/cards";
  @import "./components/card_page";
+ @import "./components/card_animation";
  @import "./components/media";
  @import "./layout/header";
  @import "./pages/function";

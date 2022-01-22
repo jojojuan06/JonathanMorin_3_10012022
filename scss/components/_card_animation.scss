@@ -1,0 +1,42 @@
+// CARD ANIMATION
+.card_list_item
+{
+animation: menu_item 1s;
+
+&.one 
+{
+animation-delay: 0s;  
+}
+&.two
+{
+animation-delay: 0.1s;  
+}
+&.three 
+{
+animation-delay: 0.2s;  
+}
+&.four 
+{
+animation-delay: 0.3s;  
+} 
+&.five 
+{
+animation-delay: 0.4s;  
+}
+&.six 
+{
+animation-delay: 0.5s;  
+}
+&.seven 
+{
+animation-delay: 0.6s;  
+}
+&.eight 
+{
+animation-delay: 0.7s;  
+}
+&.nine
+{
+animation-delay: 0.8s;  
+}    
+}
