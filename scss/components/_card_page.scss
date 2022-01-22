@@ -79,6 +79,24 @@ box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.50);
 .card_sub_menu {
 flex-grow: 1;
 padding: 0 16px;
+max-width: 384px;
+// flex-basis: 30%;
+
+h2
+{
+position: relative;  
+font-weight: normal; 
+&::before {
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: $tertiary;
+  position: absolute;
+  left: 0;
+  bottom:0;
+  top: 30px;
+}
+}
 }
 .card_list_item
 {
@@ -99,7 +117,11 @@ margin: 0;
 }
 & h3
 {
-margin:0;    
+margin:0;     
+}
+&_head
+{
+overflow: hidden;
 }
 }
 .card_item_price

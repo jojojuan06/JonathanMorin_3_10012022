@@ -167,6 +167,21 @@ main h1 {
 .card_sub_menu {
   flex-grow: 1;
   padding: 0 16px;
+  max-width: 384px;
+}
+.card_sub_menu h2 {
+  position: relative;
+  font-weight: normal;
+}
+.card_sub_menu h2::before {
+  content: "";
+  width: 48px;
+  height: 4px;
+  background-color: #99E2D0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 30px;
 }
 
 .card_list_item {
@@ -186,6 +201,9 @@ main h1 {
 }
 .card_list_item h3 {
   margin: 0;
+}
+.card_list_item_head {
+  overflow: hidden;
 }
 
 .card_item_price {
