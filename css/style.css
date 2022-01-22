@@ -204,7 +204,9 @@ main h1 {
 
 .card_list_item {
   display: flex;
-  justify-content: space-between;
+  overflow: hidden;
+  padding-left: 16px;
+  align-items: center;
   background-color: #fff;
   border-radius: 12px;
   margin: 16px 0;
@@ -223,18 +225,17 @@ main h1 {
 .card_list_item_head {
   overflow: hidden;
 }
-.card_list_item h3 {
-  margin-top: 8px;
-  margin-left: 16px;
-  font-size: 16px;
+.card_list_item:hover .card_checking {
+  margin: 0;
 }
-.card_list_item p {
-  margin-left: 16px;
-  margin-bottom: 8px;
+.card_list_item:hover i {
+  animation: spin_checking 0.5s both;
 }
 
 .card_item_price {
   display: flex;
+  margin-left: auto;
+  margin-right: 16px;
   align-self: center;
   font-weight: 700;
 }
@@ -267,22 +268,23 @@ main h1 {
 
 .card_checking {
   display: flex;
-  position: relative;
-  background-color: #99E2D0;
-  width: 64px;
-  min-width: 64px;
-  height: 100%;
+  margin-right: -65px;
   align-items: center;
+  position: relative;
   justify-content: center;
-  border-radius: 0px 12px 12px 0px;
+  background-color: #99E2D0;
+  width: 65px;
+  min-width: 65px;
+  height: 100%;
+  transition: margin-right 0.5s;
 }
-.card_checking .fas {
+.card_checking i {
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  color: #99E2D0;
   background-color: #fff;
+  color: #99E2D0;
   border-radius: 100px;
   height: 25.6px;
   width: 25.6px;

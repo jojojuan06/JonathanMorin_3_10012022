@@ -86,14 +86,14 @@ h2
 position: relative;  
 font-weight: normal; 
 &::before {
-  content: "";
-  width: 48px;
-  height: 4px;
-  background-color: $tertiary;
-  position: absolute;
-  left: 0;
-  bottom:0;
-  top: 30px;
+content: "";
+width: 48px;
+height: 4px;
+background-color: $tertiary;
+position: absolute;
+left: 0;
+bottom:0;
+top: 30px;
 }
 
 }
@@ -101,7 +101,9 @@ font-weight: normal;
 .card_list_item
 {
 display: flex;
-justify-content: space-between;
+overflow: hidden;
+padding-left: 16px;
+align-items: center;
 background-color: #fff;
 border-radius: 12px;
 margin: 16px 0;
@@ -122,21 +124,21 @@ margin:0;
 {
 overflow: hidden;
 }
-h3
-{
-margin-top: 8px;
-margin-left: 16px;
-font-size: 16px;  
+&:hover {
+.card_checking {
+margin:0;  
 }
-p
+i
 {
-margin-left: 16px;
-margin-bottom: 8px;
+animation: spin_checking 0.5s both;
+} 
 }
 }
 .card_item_price
 {
 display: flex;
+margin-left: auto;
+margin-right: 16px;
 align-self: center;
 font-weight: 700;
 }   
@@ -152,13 +154,13 @@ cursor: pointer;
 }
 .fas
 {
-  color: transparent;
-  background-image: linear-gradient(0deg,$primary 0%,$secondary 100%); 
-  background-clip: text;
-  -webkit-background-clip:text;
-  position: absolute;
-  opacity: 0;
-  transition: transform 500ms;
+color: transparent;
+background-image: linear-gradient(0deg,$primary 0%,$secondary 100%); 
+background-clip: text;
+-webkit-background-clip:text;
+position: absolute;
+opacity: 0;
+transition: transform 500ms;
 }
 &:hover .fas
 {
@@ -170,27 +172,26 @@ transform:scale(1);
 opacity: 0;
 }
 }
-
 .card_checking
 {
 display:flex;
-position: relative; 
-background-color: $tertiary;
-width:64px;
-min-width: 64px;
-height: 100%;
+margin-right: -65px;
 align-items: center;
-justify-content: center;
-border-radius: 0px 12px 12px 0px ;
-
-& .fas 
+position: relative; 
+justify-content: center; 
+background-color: $tertiary;
+width:65px;
+min-width: 65px;
+height: 100%;
+transition: margin-right 0.5s;
+& i
 {
 display: flex;
 align-items: center;
 justify-content: center;
-position: relative;  
-color: $tertiary; 
+position: relative;
 background-color: #fff; 
+color: $tertiary;
 border-radius: 100px;
 height: 25.6px;
 width: 25.6px;
