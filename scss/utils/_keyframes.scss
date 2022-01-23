@@ -1,26 +1,26 @@
 @keyframes spin_checking
 {
-0%
-{
-transform: rotate(-270deg);     
-}
-100%
-{
-transform: rotate(0deg);
-}
+    0%
+        {
+        transform: rotate(-270deg);     
+        }
+    100%
+        {
+        transform: rotate(0deg);
+        }
 }
 
 
 @keyframes menu_item
 {
-0%
-{
-transform: translateY(50%);
-opacity: 0;
-}
-100% 
-{
-transform: translateY(0%);
-opacity: 1;
-}
+    0%
+        {
+        transform: translateY(50%);
+        opacity: 0;
+        }
+    100% 
+        {
+        transform: translateY(0%);
+        opacity: 1;
+        }
 }

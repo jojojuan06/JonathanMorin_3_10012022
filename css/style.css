@@ -325,16 +325,15 @@ main h1 {
   position: relative;
   z-index: 1000;
 }
+.header a {
+  text-decoration: none;
+}
 
 .header_logo {
   font-family: "Shrikhand", "cursive";
   margin: 0;
   text-align: center;
   color: initial;
-}
-
-header a {
-  text-decoration: none;
 }
 
 .local {
