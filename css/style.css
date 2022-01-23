@@ -327,6 +327,10 @@ main h1 {
   .card_header h1 {
     margin: auto;
   }
+
+  .function ol {
+    justify-content: center;
+  }
 }
 .header {
   padding: 16px;
