@@ -1,5 +1,10 @@
 /* MOBIL FIRST MEDIA QUERIES*/
 
 @media screen and (min-width:768px){
-    
+    .card_header {
+          justify-content: center;
+      h1 {
+          margin: auto;
+        }    
+    }    
 }
