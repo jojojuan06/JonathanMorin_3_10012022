@@ -6,22 +6,22 @@
   background-color: #fafafa;
 h2
 {
-width: 92%;
-font-size: 24px;
-margin: auto;
+  width: 92%;
+  font-size: 24px;
+  margin: auto;
 }
-&._menu_title
+  &._menu_title
 {
   margin: 0;  
 }
-&._subtitle
+  &._subtitle
 {
   font-weight: 300;
   margin: 24px 0;
 }
-&_sub-title
+  &_sub-title
 {
-margin-bottom: 37px;
+  margin-bottom: 37px;
 }
 }
 .book_btn
@@ -54,13 +54,13 @@ margin-bottom: 37px;
   {
     display: flex;
     flex-wrap: wrap;
+    gap: 16px 28px;
     list-style: none;
     counter-reset: section; 
-    padding: 0;
+    padding: 0 16px;
   li
   {
     padding: 24px;
-    margin: 16px 0 16px 32px;
     box-shadow: 4px 4px 8px rgb(0 0 0 / 13%);
     border-radius: 20px;
     background-color: #f6f6f6;

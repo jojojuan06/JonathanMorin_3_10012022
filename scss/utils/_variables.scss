@@ -5,3 +5,12 @@ $btn_text:white;
 $btn_background:white;
 $footer_text:#fff;
 $card_color:#fff;
+
+
+// CARD ANIMATION
+@for $i from 1 through 10 {
+    .card_list_item.item-#{$i}
+       {
+       animation: menu_item ($i * 0.1s) both;
+       }
+  }
