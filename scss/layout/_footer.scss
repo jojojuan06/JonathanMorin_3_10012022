@@ -9,7 +9,7 @@
       flex-wrap: wrap;
       text-align: left;
       text-decoration: none;
-      color: #fff;
+      color: $footer_text;
   
     &_container
       {
@@ -30,7 +30,7 @@
         margin: 0;
         a
           {
-            color: #fff;
+            color: $footer_text;
             text-decoration: none;
           }  
       }

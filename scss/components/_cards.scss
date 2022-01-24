@@ -1,8 +1,8 @@
 // CARD MENU
 .card_badge
 {
-  background-color: #99e2d0;
-  color: #1b6150;
+  background-color: $card_badge_back_color;
+  color: $card_badge_text_color;
   padding: 8px;
   border-radius: 2px;
   position: absolute;
@@ -11,7 +11,7 @@
 }
 .card_menus
   {
-    background-color: #f6f6f6;
+    background-color: $card_menu_color;
     h2
     {
       margin: auto 40px;
@@ -19,9 +19,8 @@
   & .card
   {
     flex-grow: 1;
-    width: 100%;
-    max-width: 648px;
-    background-color: #fff;
+    flex-basis: 33%;
+    background-color: $card_color;
     border-radius: 1rem;
     position: relative;
     text-decoration: none;
@@ -51,6 +50,7 @@
   {
     height: 192px;
     width: 100%;
+    min-width: 343px;
     border: 0 solid transparent;
     border-radius: 16px 16px 0 0;
     box-shadow: none;
