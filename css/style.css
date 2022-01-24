@@ -342,7 +342,6 @@ main h1 {
 
 .header_logo {
   font-family: "Shrikhand", "cursive";
-  margin: 0;
   text-align: center;
   color: initial;
 }
@@ -350,13 +349,22 @@ main h1 {
 .local_ {
   display: flex;
   justify-content: center;
-  padding: 20px 16px;
   background-color: #f3f3f3;
   font-size: 19.2px;
   position: relative;
 }
+.local_ i {
+  display: flex;
+  margin: 16px;
+  align-self: center;
+}
 .local__text {
+  display: flex;
+  flex-direction: row;
   font-weight: 700;
+}
+.local__text h2 {
+  font-size: 19.2px;
 }
 
 .book_menu {
