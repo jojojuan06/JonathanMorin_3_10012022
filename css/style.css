@@ -207,9 +207,8 @@ main h1 {
 
 .card_sub_menu {
   flex-grow: 1;
-  padding: 0 16px;
+  margin: auto 16px;
   max-width: 384px;
-  min-width: 334px;
   flex-basis: 50%;
 }
 .card_sub_menu h2 {
@@ -368,12 +367,12 @@ main h1 {
 }
 
 .book_menu {
-  padding: 32px;
+  padding: 19px;
   text-align: center;
   background-color: #fafafa;
 }
 .book_menu h2 {
-  width: 92%;
+  width: 100%;
   font-size: 24px;
   margin: auto;
 }
