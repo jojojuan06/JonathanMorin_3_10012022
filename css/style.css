@@ -113,7 +113,6 @@ main h1 {
 .card_menus .card_img {
   height: 192px;
   width: 100%;
-  min-width: 343px;
   border: 0 solid transparent;
   border-radius: 16px 16px 0 0;
   box-shadow: none;
