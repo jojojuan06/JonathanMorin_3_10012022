@@ -48,26 +48,23 @@
     100%{transform: rotate(360deg);}
     }
   
-  .point-1,.point-2,.point-3
-  {
-  display:inline-block;
-  align-self:center;
-  justify-content:space-around; 
-  margin-left:2px;
-  margin-right:2px;
-  border-radius:50%;
-  width:5px;  
-  animation:point 1.5s ease-in-out infinite;
-  }
 
 
 
 //loader preview
 
-@keyframes loader_preview
+
+@keyframes fade-in
 {
-  to {
-    visibility:hidden;
-    opacity:0;
+  0%, 99% {
+     opacity: 1;
+  }
+}
+
+@keyframes fade-out
+{
+  99%, 100% {
+      opacity: 0;
+      visibility: hidden;
   }
 }
