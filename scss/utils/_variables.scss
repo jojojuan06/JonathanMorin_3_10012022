@@ -10,10 +10,3 @@ $card_menu_color:#f6f6f6;
 $card_badge_text_color:#1b6150;
 $card_badge_back_color:#99E2D0;
 
-// CARD ANIMATION
-@for $i from 1 through 10 {
-    .card_list_item.item-#{$i}
-       {
-       animation: menu_item ($i * 0.1s) both;
-       }
-  }
