@@ -39,6 +39,46 @@
   animation: menu_item 1s both;
 }
 
+.card_list_item.item-1 {
+  animation: menu_item 0.1s both;
+}
+
+.card_list_item.item-2 {
+  animation: menu_item 0.2s both;
+}
+
+.card_list_item.item-3 {
+  animation: menu_item 0.3s both;
+}
+
+.card_list_item.item-4 {
+  animation: menu_item 0.4s both;
+}
+
+.card_list_item.item-5 {
+  animation: menu_item 0.5s both;
+}
+
+.card_list_item.item-6 {
+  animation: menu_item 0.6s both;
+}
+
+.card_list_item.item-7 {
+  animation: menu_item 0.7s both;
+}
+
+.card_list_item.item-8 {
+  animation: menu_item 0.8s both;
+}
+
+.card_list_item.item-9 {
+  animation: menu_item 0.9s both;
+}
+
+.card_list_item.item-10 {
+  animation: menu_item 1s both;
+}
+
 @keyframes spin_checking {
   0% {
     transform: rotate(-270deg);
@@ -399,17 +439,17 @@ main h1 {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
-.function_ {
+.tutorial_ {
   padding: 32px 0px;
 }
-.function___menu {
+.tutorial___menu {
   display: flex;
   flex-direction: column;
 }
-.function__container {
+.tutorial__container {
   margin: auto;
 }
-.function_ ol {
+.tutorial_ ol {
   display: flex;
   flex-wrap: wrap;
   gap: 16px 28px;
@@ -417,7 +457,7 @@ main h1 {
   counter-reset: section;
   padding: 0 16px;
 }
-.function_ ol li {
+.tutorial_ ol li {
   padding: 24px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.13);
   border-radius: 20px;
@@ -427,7 +467,7 @@ main h1 {
   max-width: 400px;
   width: auto;
 }
-.function_ ol li::before {
+.tutorial_ ol li::before {
   counter-increment: section;
   /* On incrémente le compteur section */
   content: counters(section, ".") " ";
@@ -442,14 +482,14 @@ main h1 {
   position: absolute;
   left: -12px;
 }
-.function__list {
+.tutorial__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0;
   padding: 0;
 }
-.function__title {
+.tutorial__title {
   margin: auto 16px;
 }
 
@@ -467,11 +507,11 @@ main h1 {
     margin: auto;
   }
 
-  .function ol {
+  .tutorial ol {
     justify-content: center;
   }
 
-  .function__list {
+  .tutorial__list {
     flex-direction: row;
   }
 }

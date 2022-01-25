@@ -1,0 +1,7 @@
+// CARD ANIMATION
+@for $i from 1 through 10 {
+    .card_list_item.item-#{$i}
+       {
+       animation: menu_item ($i * 0.1s) both;
+       }
+  }
