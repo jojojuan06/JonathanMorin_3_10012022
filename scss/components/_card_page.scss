@@ -38,10 +38,10 @@
             }
         }
 .card_header{
-            padding: 16px 32px 0 16px;
+            padding: 16px 0 0 16px;
             display: flex;
             align-items: center;
-            justify-content: space-between;  
+            justify-content: center;  
         }
 .card_order{
             display: flex;
@@ -75,17 +75,18 @@
     {
         position: relative;  
         font-weight: normal; 
+        font-size: 16px;
 
         &::before 
         {
             content: "";
-            width: 48px;
-            height: 4px;
+            width: 42px;
+            height: 3px;
             background-color: $tertiary;
             position: absolute;
             left: 0;
             bottom:0;
-            top: 30px;
+            top: 26px;
         }
     }
 }
@@ -101,7 +102,8 @@
         cursor: pointer;
         max-width: 270px;
         height:70px;
-        max-height: 70px;  
+        max-height: 70px;
+        max-width: 300px;  
 & p     {
         margin: 0;
         text-overflow: ellipsis;
@@ -140,6 +142,7 @@
     display: flex;
     position: relative;
     align-self: auto;
+    margin-left: 16px;
     i
     {
         font-size: 24px;
