@@ -225,6 +225,8 @@ body {
 }
 
 main h1 {
+  font-size: 27px;
+  margin-right: 26px;
   font-family: "Shrikhand", "sans-serif";
 }
 
@@ -335,10 +337,10 @@ main h1 {
 }
 
 .card_header {
-  padding: 16px 32px 0 16px;
+  padding: 16px 0 0 16px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .card_order {
@@ -372,16 +374,17 @@ main h1 {
 .card_sub_menu h2 {
   position: relative;
   font-weight: normal;
+  font-size: 16px;
 }
 .card_sub_menu h2::before {
   content: "";
-  width: 48px;
-  height: 4px;
+  width: 42px;
+  height: 3px;
   background-color: #99E2D0;
   position: absolute;
   left: 0;
   bottom: 0;
-  top: 30px;
+  top: 26px;
 }
 
 .card_list_item {
@@ -397,6 +400,7 @@ main h1 {
   max-width: 270px;
   height: 70px;
   max-height: 70px;
+  max-width: 300px;
 }
 .card_list_item p {
   margin: 0;
@@ -432,6 +436,7 @@ main h1 {
   display: flex;
   position: relative;
   align-self: auto;
+  margin-left: 16px;
 }
 .card_header_heart i {
   font-size: 24px;
