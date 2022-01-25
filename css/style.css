@@ -330,8 +330,8 @@ main h1 {
 .card_menu_container_list {
   display: flex;
   justify-content: center;
-  width: 100%;
   flex-wrap: wrap;
+  margin: auto 30px;
 }
 
 .card_header {
@@ -367,7 +367,7 @@ main h1 {
 
 .card_sub_menu {
   max-width: 384px;
-  flex-basis: 50%;
+  width: 100%;
 }
 .card_sub_menu h2 {
   position: relative;
