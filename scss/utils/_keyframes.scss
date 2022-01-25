@@ -1,3 +1,4 @@
+//  loader spin La fonction rotate() définit une transformation qui déplace un élément autour d'un point fixe
 @keyframes spin_checking
 {
     0%
@@ -9,7 +10,7 @@
         transform: rotate(0deg);
         }
 }
-
+// transition menu déplacer un élement verticalement sur le plan Translate Y 
 
 @keyframes menu_item
 {
@@ -23,4 +24,50 @@
         transform: translateY(0%);
         opacity: 1;
         }
+}
+
+//loader scale() permet de modifier la taille d'un élément avec un facteur d'échelle sur deux
+@keyframes point{
+    0%
+    { 
+    transform:scale(0.2);
+    }
+    50%
+    {
+    transform:scale(1);
+    }
+    100%
+    {
+    transform:scale(0.2); 
+    }
+  }
+//loader point animation
+
+  @keyframes spin {
+    0%{ transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+    }
+  
+  .point-1,.point-2,.point-3
+  {
+  display:inline-block;
+  align-self:center;
+  justify-content:space-around; 
+  margin-left:2px;
+  margin-right:2px;
+  border-radius:50%;
+  width:5px;  
+  animation:point 1.5s ease-in-out infinite;
+  }
+
+
+
+//loader preview
+
+@keyframes loader_preview
+{
+  to {
+    visibility:hidden;
+    opacity:0;
+  }
 }

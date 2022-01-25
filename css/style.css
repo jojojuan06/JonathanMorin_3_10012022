@@ -57,6 +57,123 @@
     opacity: 1;
   }
 }
+@keyframes point {
+  0% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.2);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.point-1, .point-2, .point-3 {
+  display: inline-block;
+  align-self: center;
+  justify-content: space-around;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 50%;
+  width: 5px;
+  animation: point 1.5s ease-in-out infinite;
+}
+
+@keyframes loader_preview {
+  to {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.section {
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  opacity: 1;
+  animation: loader_preview 0s linear 1.75s forwards;
+}
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.loader-text p {
+  font-size: 50px;
+  color: black;
+}
+
+.loader-text {
+  padding: 0.5rem;
+  background-clip: text;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+}
+
+.loader-quart {
+  margin-right: 16px;
+  border-radius: 50px;
+  border: 6px solid rgba(255, 255, 255, 0.4);
+}
+
+.loader-quart:after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  border-radius: 50px;
+  border: 6px solid rgba(0, 0, 0, 0.25);
+  border-top-color: #2bb391;
+  animation: spin 1.5s linear infinite;
+}
+
+.point-1 {
+  background-color: #9356DC;
+  font-size: 8px;
+  color: transparent;
+  animation-name: point;
+  animation-delay: 0s;
+}
+
+.point-2 {
+  background-color: #FF79DA;
+  font-size: 8px;
+  color: transparent;
+  animation-name: point;
+  animation-delay: 0.4s;
+}
+
+.point-3 {
+  background-color: #9356DC;
+  font-size: 8px;
+  color: transparent;
+  animation-name: point;
+  animation-delay: 0.6s;
+}
+
 .header {
   padding: 0.5px;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
