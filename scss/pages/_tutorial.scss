@@ -37,9 +37,9 @@
           box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
       }
 }
-.tutorial_{
+.tutorial{
       padding: 32px 0px;
-&__menu
+&_menu
     {
         display: flex;
         flex-direction: column;
@@ -50,7 +50,9 @@
 ol
     {
       display: flex;
+      flex-direction: column;
       flex-wrap: wrap;
+      white-space: nowrap;
       gap: 16px 28px;
       list-style: none;
       counter-reset: section; 
@@ -83,7 +85,6 @@ ol
     }
 &_list {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       margin: 0;
       padding: 0;
@@ -91,6 +92,7 @@ ol
 &_title
     {
       margin: auto 16px;
+      text-align: center;
     }
   }
 .fa-mobile-alt.fas,.fa-list-ul.fas,.fa-store.fas{

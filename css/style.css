@@ -356,14 +356,13 @@ main h1 {
   font-size: 17.6px;
   border-radius: 100px;
   color: #fff;
-  background-color: #686868;
+  background-color: white;
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
   transition-duration: 0.25s;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
 .card_order_btn:hover {
-  background-color: white;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -525,25 +524,27 @@ main h1 {
   box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
 }
 
-.tutorial_ {
+.tutorial {
   padding: 32px 0px;
 }
-.tutorial___menu {
+.tutorial_menu {
   display: flex;
   flex-direction: column;
 }
-.tutorial__container {
+.tutorial_container {
   margin: auto;
 }
-.tutorial_ ol {
+.tutorial ol {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  white-space: nowrap;
   gap: 16px 28px;
   list-style: none;
   counter-reset: section;
   padding: 0 16px;
 }
-.tutorial_ ol li {
+.tutorial ol li {
   padding: 24px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.13);
   border-radius: 20px;
@@ -553,7 +554,7 @@ main h1 {
   max-width: 400px;
   width: auto;
 }
-.tutorial_ ol li::before {
+.tutorial ol li::before {
   counter-increment: section;
   /* On incrémente le compteur section */
   content: counters(section, ".") " ";
@@ -568,15 +569,15 @@ main h1 {
   position: absolute;
   left: -12px;
 }
-.tutorial__list {
+.tutorial_list {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   margin: 0;
   padding: 0;
 }
-.tutorial__title {
+.tutorial_title {
   margin: auto 16px;
+  text-align: center;
 }
 
 .fa-mobile-alt.fas, .fa-list-ul.fas, .fa-store.fas {
@@ -586,13 +587,14 @@ main h1 {
 
 /* MOBIL FIRST MEDIA QUERIES*/
 @media screen and (min-width: 768px) {
-  .tutorial_ ol {
+  .tutorial ol {
     justify-content: center;
-  }
-  .tutorial__list {
     flex-direction: row;
   }
-  .tutorial__title {
+  .tutorial_list {
+    flex-direction: row;
+  }
+  .tutorial_title {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -644,6 +646,7 @@ main h1 {
 .footer ul a {
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 .footer li:first-child {
   margin-top: 0;

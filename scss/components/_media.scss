@@ -1,9 +1,10 @@
 /* MOBIL FIRST MEDIA QUERIES*/
 
 @media screen and (min-width:768px){
-.tutorial_ {
+.tutorial {
             ol{
                 justify-content: center;
+                flex-direction:row;
                 }
              &_list{
                 flex-direction:row;
