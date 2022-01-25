@@ -27,9 +27,15 @@
       border-radius: 100px;
       color: #fff;
       background-color: #686868;
-      background: linear-gradient(to bottom,#9356DC, #FF79DA );
+      background: linear-gradient(to bottom,$primary, $secondary );
       cursor: pointer;
-      box-shadow: 4px 4px 10px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+      transition-duration: 0.25s;
+      &:hover
+      {
+          background-color: white;
+          box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.50);
+      }
 }
 .function_{
       padding: 32px 0px;
@@ -62,7 +68,7 @@ ol
     &::before {
       counter-increment: section;                /* On incrémente le compteur section */
       content: counters(section,".") " "; 
-      background: #9356dc;
+      background: $primary;
       height: 24px;
       width: 24px;
       border-radius: 100px;
@@ -84,7 +90,7 @@ ol
     }
 &_title
     {
-      margin: auto 40px;
+      margin: auto 16px;
     }
   }
 .fa-mobile-alt.fas,.fa-list-ul.fas,.fa-store.fas{
