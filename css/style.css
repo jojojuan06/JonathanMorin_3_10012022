@@ -508,24 +508,6 @@ main h1 {
   margin-bottom: 37px;
 }
 
-.book_btn {
-  border: 0;
-  padding: 15px 12px;
-  font-weight: 500;
-  font-size: 17.6px;
-  border-radius: 100px;
-  color: #fff;
-  background-color: #686868;
-  background: linear-gradient(to bottom, #9356DC, #FF79DA);
-  cursor: pointer;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-  transition-duration: 0.25s;
-}
-.book_btn:hover {
-  background-color: white;
-  box-shadow: 0.25rem 0.25rem 10px rgba(0, 0, 0, 0.5);
-}
-
 .tutorial {
   padding: 32px 0px;
 }
