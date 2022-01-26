@@ -603,21 +603,22 @@ main h1 {
   display: flex;
   gap: 20vw;
   font-size: smaller;
-  padding: 16px;
+  padding-top: 48px;
   flex-wrap: wrap;
   text-align: left;
   text-decoration: none;
   color: #fff;
 }
-.footer_container {
+.footer__container {
   display: flex;
   flex-direction: column;
+  margin: 16px;
 }
 .footer span {
   color: #fff;
   font-family: Shrikhand, "cursive";
   font-size: 19.2px;
-  margin: 0 0 16px;
+  padding-top: 16px;
 }
 .footer ul {
   list-style: none;
@@ -638,8 +639,7 @@ main h1 {
 .footer li:hover {
   text-decoration: underline;
 }
-
-.fa-utensils.fas, .fa-hands-helping.fas {
+.footer .fas {
   width: 19.2px;
   margin-right: 8px;
   font-weight: 900;

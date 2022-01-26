@@ -1,56 +1,54 @@
 // FOOTER
-.footer
-  {
-      background-color: #353535;
-      display: flex;
-      gap: 20vw;
-      font-size: smaller;
-      padding: 16px;
-      flex-wrap: wrap;
-      text-align: left;
-      text-decoration: none;
-      color: $footer_text;
-  
-    &_container
-      {
-        display: flex;
-        flex-direction: column;
-      }
-  span 
-      {
-        color: $footer_text;
-        font-family: Shrikhand,"cursive";
-        font-size: 19.2px;
-        margin: 0 0 16px;
-      }
-  ul 
-      {
-        list-style: none;
-        padding: 16px 0;
-        margin: 0;
-        a
-          {
-            color: $footer_text;
-            text-decoration: none;
-            cursor: pointer;
-          }  
-      }
-  li:first-child
-      {
-        margin-top: 0;
-      }
-  li  {
-        margin: 8px 0;
-  
-        &:hover 
+.footer{
+    background-color: #353535;
+    display: flex;
+    gap: 20vw;
+    font-size: smaller;
+    padding-top: 48px;
+    flex-wrap: wrap;
+    text-align: left;
+    text-decoration: none;
+    color: $footer_text;
+  &__container
         {
-          text-decoration: underline;
+          display: flex;
+          flex-direction: column;
+          margin: 16px;
         }
-      }
-}
-.fa-utensils.fas,.fa-hands-helping.fas
-{
-  width: 19.2px;
-  margin-right: 8px; 
-  font-weight: 900;
-}
+    span 
+        {
+          color: $footer_text;
+          font-family: Shrikhand,"cursive";
+          font-size: 19.2px;
+          padding-top: 16px;
+        }
+    ul 
+        {
+          list-style: none;
+          padding: 16px 0;
+          margin: 0;
+          a
+            {
+              color: $footer_text;
+              text-decoration: none;
+              cursor: pointer;
+            }  
+        }
+    li:first-child
+        {
+          margin-top: 0;
+        }
+    li  {
+          margin: 8px 0;
+    
+          &:hover 
+          {
+            text-decoration: underline;
+          }
+        }
+  & .fas
+  {
+    width: 19.2px;
+    margin-right: 8px; 
+    font-weight: 900;
+  }}
