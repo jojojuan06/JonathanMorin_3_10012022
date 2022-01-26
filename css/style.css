@@ -599,7 +599,7 @@ main h1 {
   .card_header {
     justify-content: center;
   }
-  .card_header h1 {
+  .card_header h2 {
     margin: 0px;
   }
 
