@@ -188,21 +188,20 @@
 .header a {
   text-decoration: none;
 }
-
-.header_logo {
+.header__logo {
   font-family: "Shrikhand", "cursive";
   text-align: center;
   color: initial;
 }
 
-.local_ {
+.local {
   display: flex;
   justify-content: center;
   background-color: #f3f3f3;
   font-size: 19.2px;
   position: relative;
 }
-.local_ i {
+.local i {
   display: flex;
   margin: auto 16px;
   align-self: center;
