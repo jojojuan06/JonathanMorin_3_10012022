@@ -32,8 +32,7 @@
     }
     &__list
     {
-      display: flex;
-      justify-content: center;
+      @include display-center;
       flex-wrap: wrap;
       gap: 32px;
     }

@@ -15,8 +15,7 @@
   }
 }
 .local {
-    display: flex;
-    justify-content: center;
+    @include display-center;
     background-color: #f3f3f3;
     font-size: 19.2px;
     position: relative;

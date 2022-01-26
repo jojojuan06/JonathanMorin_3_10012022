@@ -12,14 +12,13 @@
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);   
 }
 .fa-arrow-left{
+        @include display-center;
         position: absolute;
         left: 32px;
         height: 32px;
         width: 32px;
         top: 42%;
-        display: flex;
         align-items: center;
-        justify-content: center;
         font-size: 19.2px;
         color: #000;  
         cursor: pointer; 
@@ -31,22 +30,19 @@
         position: relative;
         &_list
             {
-            display:flex;
-            justify-content: center;
+            @include display-center;
             flex-wrap: wrap;
             margin: auto 30px;
             }
         }
 .card_header{
             padding: 16px 0 0 16px;
-            display: flex;
-            align-items: center;
-            justify-content: center;  
+            @include display-center;
+            align-items: center; 
         }
 .card_order{
-            display: flex;
             text-decoration: none;
-            justify-content: center;
+            @include display-center;
             padding: 3rem 0;  
 }
 .card_sub_menu  
@@ -101,7 +97,7 @@
         }
 &_head
         {
-            overflow: hidden;
+        overflow: hidden;
         }
 &:hover .card_checking 
         {

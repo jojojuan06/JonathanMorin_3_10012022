@@ -1,17 +1,6 @@
 // Les mixins sont très similaires aux variables, mais au lieu de ne stocker que des valeurs, ils stockent des blocs de code entiers.
-@mixin display-center {
-     display: flex;
-     justify-content: center;
-    }
-
-@mixin mixin-name {
-         css-property: value;
-        }  
-        
-@mixin mixin-name {
-             css-property: value;
-            } 
-            
-@mixin mixin-name {
-                 css-property: value;
-                }            
+@mixin display-center 
+{
+    display: flex;
+    justify-content: center;
+}          
