@@ -99,6 +99,8 @@
 }
 .loader_section__container {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   margin: auto;
@@ -108,6 +110,7 @@
   color: black;
 }
 .loader_section__text {
+  font-family: "Shrikhand", "cursive";
   padding: 0.5rem;
   background-clip: text;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
@@ -132,10 +135,18 @@
   animation: spin 1.5s linear infinite;
 }
 .loader_section .loader {
+  margin: 0;
   width: 50px;
   height: 50px;
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
+}
+.loader_section__title {
+  display: flex;
+}
+.loader_section__point {
+  display: flex;
 }
 .loader_section .point-1 {
   background-color: #9356DC;
@@ -248,11 +259,12 @@ main h1 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin: auto;
+  max-width: 90%;
 }
 .card_menus__list {
   display: flex;
   justify-content: center;
-  margin: 16px;
   flex-wrap: wrap;
   gap: 32px;
 }
@@ -262,7 +274,7 @@ main h1 {
 .card_menus__img {
   height: 192px;
   width: 100%;
-  min-width: 275px;
+  min-width: 265px;
   border: 0 solid transparent;
   border-radius: 16px 16px 0 0;
   box-shadow: none;
@@ -457,11 +469,10 @@ main h1 {
 
 .btn {
   border: 0;
-  padding: 12px 24px;
+  padding: 15px 18px;
   font-weight: 500;
   font-size: 17.6px;
   border-radius: 100px;
-  color: #fff;
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
   transition-duration: 0.25s;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
@@ -471,6 +482,11 @@ main h1 {
 .btn:hover {
   opacity: 0.8;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.btn a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
 }
 
 .book_menu {
@@ -497,14 +513,16 @@ main h1 {
 .tutorial {
   padding: 32px 0px;
 }
-.tutorial_menu {
+.tutorial__menu {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
-.tutorial_container {
+.tutorial__container {
   margin: auto;
 }
 .tutorial ol {
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -512,17 +530,18 @@ main h1 {
   gap: 16px 28px;
   list-style: none;
   counter-reset: section;
-  padding: 0 16px;
+  padding: 0 8px;
+  margin: 16px;
 }
 .tutorial ol li {
+  display: flex;
+  height: 16px;
   padding: 24px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.13);
   border-radius: 20px;
   background-color: #f6f6f6;
   position: relative;
   flex-grow: 1;
-  max-width: 400px;
-  width: auto;
 }
 .tutorial ol li::before {
   counter-increment: section;
@@ -539,13 +558,19 @@ main h1 {
   position: absolute;
   left: -12px;
 }
-.tutorial_list {
+.tutorial__list {
   display: flex;
   justify-content: center;
   margin: 0;
   padding: 0;
 }
-.tutorial_title {
+.tutorial__list li:hover {
+  background-color: #f5edff;
+}
+.tutorial__list li:hover .fas {
+  color: #9356DC;
+}
+.tutorial__title {
   margin: auto 16px;
   text-align: center;
 }
@@ -561,10 +586,10 @@ main h1 {
     justify-content: center;
     flex-direction: row;
   }
-  .tutorial_list {
+  .tutorial__list {
     flex-direction: row;
   }
-  .tutorial_title {
+  .tutorial__title {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -11,17 +11,20 @@
   &__container
   {
   display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items:center;
   text-align:center;
   margin:auto;
   }
   &__text p
   { 
-   font-size:50px;
-   color:black;
+  font-size:50px;
+  color:black;
   }
   &__text
   {
+   font-family: "Shrikhand", "cursive";
    padding:0.5rem;
    background-clip: text;
    background: -webkit-linear-gradient($primary , $secondary);
@@ -50,10 +53,20 @@
 
   .loader
   {
+    margin: 0;
     width:50px;
     height:50px;
-    display:inline-block;
+    display:flex;
+    flex-wrap: wrap;
     position:relative;
+  }
+  &__title
+  {
+  display: flex;  
+  }
+  &__point
+  {
+  display:flex; 
   }
   
   .point-1
@@ -91,5 +104,4 @@
   border-radius:50%;
   width:5px;  
   animation:point 1.5s ease-in-out infinite;
-  }
-}
+  }}

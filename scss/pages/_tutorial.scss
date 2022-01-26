@@ -21,16 +21,18 @@
   }
 .tutorial{
       padding: 32px 0px;
-&_menu
+&__menu
     {
         display: flex;
+        justify-content: center;
         flex-direction: column;
     }
-&_container{
+&__container{
       margin: auto;
     }
-ol
+  ol
     {
+      flex-grow: 1;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -38,17 +40,18 @@ ol
       gap: 16px 28px;
       list-style: none;
       counter-reset: section; 
-      padding: 0 16px;
+      padding: 0 8px;
+      margin: 16px;
     li
     {
+      display: flex;
+      height: 16px;
       padding: 24px;
       box-shadow: 4px 4px 8px rgb(0 0 0 / 13%);
       border-radius: 20px;
       background-color: #f6f6f6;
       position: relative; 
       flex-grow: 1;
-      max-width: 400px;
-      width: auto;
     &::before {
       counter-increment: section;                /* On incrémente le compteur section */
       content: counters(section,".") " "; 
@@ -65,13 +68,22 @@ ol
     }
     }
     }
-&_list {
+&__list {
       display: flex;
       justify-content: center;
       margin: 0;
       padding: 0;
+     li {
+     &:hover {
+       background-color: #f5edff;
+     & .fas{
+       color: $primary;
+      }   
+     }  
+      
+     } 
     }
-&_title
+&__title
     {
       margin: auto 16px;
       text-align: center;
