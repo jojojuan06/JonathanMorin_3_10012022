@@ -87,7 +87,7 @@
     visibility: hidden;
   }
 }
-.section {
+.loader_section {
   display: flex;
   background-color: rgba(255, 255, 255, 0.9);
   height: 100%;
@@ -97,41 +97,29 @@
   opacity: 1;
   animation: 2s fade-in linear 1s forwards, 1s fade-out linear 3s forwards;
 }
-
-.loader-container {
+.loader_section__container {
   display: flex;
   align-items: center;
   text-align: center;
   margin: auto;
 }
-
-.loader-text p {
+.loader_section__text p {
   font-size: 50px;
   color: black;
 }
-
-.loader-text {
+.loader_section__text {
   padding: 0.5rem;
   background-clip: text;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.loader {
-  width: 50px;
-  height: 50px;
-  display: inline-block;
-  position: relative;
-}
-
-.loader-quart {
+.loader_section__quart {
   margin-right: 16px;
   border-radius: 50px;
   border: 6px solid rgba(255, 255, 255, 0.4);
 }
-
-.loader-quart:after {
+.loader_section__quart:after {
   content: "";
   position: absolute;
   top: -6px;
@@ -143,32 +131,34 @@
   border-top-color: #2bb391;
   animation: spin 1.5s linear infinite;
 }
-
-.point-1 {
+.loader_section .loader {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  position: relative;
+}
+.loader_section .point-1 {
   background-color: #9356DC;
   font-size: 8px;
   color: transparent;
   animation-name: point;
   animation-delay: 0s;
 }
-
-.point-2 {
+.loader_section .point-2 {
   background-color: #FF79DA;
   font-size: 8px;
   color: transparent;
   animation-name: point;
   animation-delay: 0.4s;
 }
-
-.point-3 {
+.loader_section .point-3 {
   background-color: #9356DC;
   font-size: 8px;
   color: transparent;
   animation-name: point;
   animation-delay: 0.6s;
 }
-
-.point-1, .point-2, .point-3 {
+.loader_section .point-1, .loader_section .point-2, .loader_section .point-3 {
   display: inline-block;
   align-self: center;
   justify-content: space-around;
