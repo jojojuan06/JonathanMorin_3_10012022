@@ -632,7 +632,7 @@ main h1 {
   display: flex;
   gap: 20vw;
   font-size: smaller;
-  padding-top: 48px;
+  padding-top: 16px;
   flex-wrap: wrap;
   text-align: left;
   text-decoration: none;
@@ -646,7 +646,7 @@ main h1 {
 .footer span {
   color: #fff;
   font-family: Shrikhand, "cursive";
-  font-size: 19.2px;
+  font-size: 17px;
   padding-top: 16px;
 }
 .footer ul {
@@ -658,6 +658,7 @@ main h1 {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  font-size: 15px;
 }
 .footer li:first-child {
   margin-top: 0;

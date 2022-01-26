@@ -4,7 +4,7 @@
     display: flex;
     gap: 20vw;
     font-size: smaller;
-    padding-top: 48px;
+    padding-top: 16px;
     flex-wrap: wrap;
     text-align: left;
     text-decoration: none;
@@ -19,7 +19,7 @@
         {
           color: $footer_text;
           font-family: Shrikhand,"cursive";
-          font-size: 19.2px;
+          font-size: 17px;
           padding-top: 16px;
         }
     ul 
@@ -32,6 +32,7 @@
               color: $footer_text;
               text-decoration: none;
               cursor: pointer;
+              font-size: 15px;
             }  
         }
     li:first-child
