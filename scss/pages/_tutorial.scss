@@ -77,9 +77,10 @@
       justify-content: center;
       margin: 0;
       padding: 0;
+      
      li {
      &:hover {
-       background-color: #f5edff;
+       background-color:#f5edff;
        cursor: pointer;
      & .fas{
        color: $primary;

@@ -144,9 +144,11 @@
 }
 .loader_section__title {
   display: flex;
+  flex-direction: column;
 }
 .loader_section__point {
   display: flex;
+  margin: auto;
 }
 .loader_section .point-1 {
   background-color: #9356DC;
@@ -614,6 +616,15 @@ main h1 {
   }
   .card_menus .card {
     flex-grow: 0;
+  }
+
+  .loader_section__title {
+    display: flex;
+    flex-direction: row;
+  }
+  .loader_section__point {
+    display: flex;
+    margin: 0;
   }
 }
 .footer {

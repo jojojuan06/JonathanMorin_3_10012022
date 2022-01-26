@@ -62,11 +62,13 @@
   }
   &__title
   {
-  display: flex;  
+  display: flex;
+  flex-direction: column;  
   }
   &__point
   {
   display:flex; 
+  margin: auto;
   }
   
   .point-1
