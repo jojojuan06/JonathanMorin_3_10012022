@@ -1,10 +1,13 @@
 // BODY
+* {
+  box-sizing: border-box;
+}
+
 body
   {
       margin: auto;
       font-family: 'Roboto',sans-serif;
       scroll-behavior: smooth;
-      box-sizing: border-box;
   }
     main h1
   {
