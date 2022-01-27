@@ -504,14 +504,11 @@ main h1 {
   font-size: 24px;
   margin: auto;
 }
-.book_menu._menu_title {
+.book_menu__title {
   margin: 0;
 }
-.book_menu._subtitle {
+.book_menu__sub-title {
   font-weight: 300;
-  margin: 24px 0;
-}
-.book_menu_sub-title {
   padding-bottom: 37px;
   width: 85%;
   font-size: 18px;
