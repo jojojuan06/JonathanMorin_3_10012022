@@ -1,94 +1,88 @@
 // Fonctionement
-.book_menu{ 
-      padding: 43px 0px 72px 0px;
-      text-align: center;
-      background-color: #fafafa;
-    h2{
-      width: 88%;
-      font-size: 24px;
-      margin: auto;
+.book_menu { 
+  padding:43px 0px 72px 0px;
+  text-align: center;
+  background-color: #fafafa;
+  h2 {
+    width: 88%;
+    font-size:24px;
+    margin:auto;
+  }
+  &__title {
+    margin:0;  
+  }
+  &__sub-title {
+      font-weight:300;
+      padding-bottom:37px;
+      width:85%;
+      font-size:18px;
+      margin:auto;
+      padding-top:11px;
     }
-&__title{
-    margin: 0;  
-    }
-&__sub-title{
-    font-weight: 300;
-    padding-bottom: 37px;
-    width: 85%;
-    font-size: 18px;
+}
+.tutorial {
+  padding:32px 0px;
+  &__menu {
+        @include display-center;
+        flex-direction: column;
+      }
+  &__container {
     margin: auto;
-    padding-top: 11px;
   }
+  ol {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    gap: 16px 28px;
+    list-style: none;
+    counter-reset: section; 
+    padding: 0 8px;
+    margin: 16px;
+    li {
+      display:flex;
+      height:16px;
+      padding:24px;
+      box-shadow:4px 4px 8px rgb(0 0 0 / 13%);
+      border-radius:20px;
+      background-color:#f6f6f6;
+      position:relative; 
+      flex-grow:1;
+      &::before {
+        counter-increment: section;                /* On incrémente le compteur section */
+        content: counters(section,".") " "; 
+        background: $primary;
+        height: 24px;
+        width: 24px;
+        border-radius: 100px;
+        @include display-center;
+        align-items: center;
+        color: #fff;
+        position: absolute;
+        left: -12px;
+      }
+   }
   }
-.tutorial{
-      padding: 32px 0px;
-&__menu
-    {
-      @include display-center;
-      flex-direction: column;
-    }
-&__container{
-      margin: auto;
-    }
-  ol
-    {
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      white-space: nowrap;
-      gap: 16px 28px;
-      list-style: none;
-      counter-reset: section; 
-      padding: 0 8px;
-      margin: 16px;
-    li
-    {
-      display: flex;
-      height: 16px;
-      padding: 24px;
-      box-shadow: 4px 4px 8px rgb(0 0 0 / 13%);
-      border-radius: 20px;
-      background-color: #f6f6f6;
-      position: relative; 
-      flex-grow: 1;
-    &::before {
-      counter-increment: section;                /* On incrémente le compteur section */
-      content: counters(section,".") " "; 
-      background: $primary;
-      height: 24px;
-      width: 24px;
-      border-radius: 100px;
-      @include display-center;
-      align-items: center;
-      color: #fff;
-      position: absolute;
-      left: -12px;
-    }
-    }
-    }
-&__list {
-      @include display-center;
-      margin: 0;
-      padding: 0;
-      
-     li {
-     &:hover {
-       background-color:#f5edff;
-       cursor: pointer;
-     & .fas{
-       color: $primary;
-      }   
-     }  
-      
-     } 
-    }
-&__title
-    {
-      margin: auto 16px;
-    }
+  &__list {
+    @include display-center;
+    margin: 0;
+    padding: 0;
+    li {
+      &:hover {
+        background-color:#f5edff;
+        cursor: pointer;
+          & .fas {
+            color: $primary;
+        }   
+      }  
+    } 
   }
-.fa-mobile-alt.fas,.fa-list-ul.fas,.fa-store.fas{
-      margin-right: 16px;
-      color: #7e7e7e;
-    }
+  &__title {
+    margin:auto 16px;
+  }
+}
+.fa-mobile-alt.fas,.fa-list-ul.fas,.fa-store.fas {
+    margin-right:16px;
+    color: #7e7e7e;
+}

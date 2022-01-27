@@ -1,4 +1,6 @@
-// CARD ANIMATION
+// CARD ANIMATION 
+// Les boucles permettent de répéter une instruction autant de fois que vous le souhaitez.
+
 @for $i from 1 through 10 {
     .card_list_item.item-#{$i}
        {
