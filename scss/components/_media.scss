@@ -25,7 +25,6 @@
 .card_menus {
     h2 {
         @include display-center;
-        margin: 0px;
     }
     .card {
         flex-grow: 0;

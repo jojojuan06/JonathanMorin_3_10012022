@@ -379,6 +379,9 @@ main h1 {
   justify-content: center;
   align-items: center;
 }
+.card_header h2 {
+  font-family: Shrikhand, "cursive";
+}
 
 .card_order {
   text-decoration: none;
@@ -620,7 +623,6 @@ main h1 {
   .card_menus h2 {
     display: flex;
     justify-content: center;
-    margin: 0px;
   }
   .card_menus .card {
     flex-grow: 0;

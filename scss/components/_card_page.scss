@@ -35,7 +35,10 @@
 {
     padding: 16px 0 0 16px;
     @include display-center;
-    align-items: center; 
+    align-items: center;
+    h2 {
+    font-family: Shrikhand,"cursive"; 
+    } 
 }
 .card_order
 {
