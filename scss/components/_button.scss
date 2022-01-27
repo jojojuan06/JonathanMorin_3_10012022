@@ -1,14 +1,12 @@
-// button page
+// button all
 .btn
 {
         border: 0;
         color: $btn_color;
         padding: 15px 18px;
         font-weight: 500;
-        font-size: 17.6px;
         border-radius: 100px;
-        background-image: linear-gradient(
-        0deg,$primary,$secondary);
+        @include button-background;
         transition-duration: .25s;
         box-shadow:  4px 4px 10px rgb(0 0 0 / 25%);
         cursor: pointer; 
@@ -22,4 +20,11 @@
         font-size: 16px;
         color: $btn_color;
     }
+}
+// button btn card page
+
+.card_order.btn
+{
+padding: 15px 44px;
+font-size: 16px;
 }
