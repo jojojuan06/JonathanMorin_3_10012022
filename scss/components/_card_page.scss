@@ -61,6 +61,7 @@
         }
     }
 }
+// animation card item
 .card_list_item {
     display: flex;
     overflow: hidden;
@@ -84,17 +85,17 @@
         overflow: hidden;
     }
     &_head {
-         overflow: hidden;
-     }
+        overflow: hidden;
+    }
     &:hover .card_checking {
         margin:0;  
     }
     &:hover .card_checking_icon {
         animation: spin_checking 1s ease;
     } 
-}  
-.card_checking
-{
+}
+// animation checking  
+.card_checking {
     display:flex;
     margin-right: -65px;
     align-items: center;
@@ -105,8 +106,7 @@
     min-width: 65px;
     height: 100%;
     transition: margin-right 0.5s;
-    & i
-    {
+    & i {
         display: flex;
         align-items: center;
         justify-content: center;

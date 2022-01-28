@@ -49,8 +49,8 @@
       position:relative; 
       flex-grow:1;
       &::before {
-        counter-increment: section;                /* On incrémente le compteur section */
-        content: counters(section,".") " "; 
+        counter-increment:section;                /* On incrémente le compteur section */
+        content: counters(section,""); 
         background: $primary;
         height: 24px;
         width: 24px;

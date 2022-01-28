@@ -564,7 +564,7 @@ main h1 {
 .tutorial ol li::before {
   counter-increment: section;
   /* On incrémente le compteur section */
-  content: counters(section, ".") " ";
+  content: counters(section, "");
   background: #9356DC;
   height: 24px;
   width: 24px;

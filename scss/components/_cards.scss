@@ -11,7 +11,7 @@
     position:absolute;
     top:16px;
     right:12px;
-   }  
+  }  
   &__card {
     flex-grow:1;
     flex-basis:33%;
@@ -30,7 +30,7 @@
     }
   &__list {
       @include display-center;
-      flex-wrap: wrap;
+      flex-wrap:wrap;
       gap: 32px;
     }
   // Combinateur adjacent
@@ -60,6 +60,7 @@
       flex-direction:column;  
      }
    }
+  //  animation heart
   &__header-heart {
     display:flex;
     position:relative;
@@ -69,21 +70,21 @@
       font-size: 24px;
       cursor: pointer;
       }
-      .fas {
-          color: transparent;
-          background-image:linear-gradient(0deg,$primary 0%,$secondary 100%); 
-          background-clip:text;
-          -webkit-background-clip:text;
-          position: absolute;
-          opacity: 0;
-          transition: all 500ms;
-        }
-        &:hover .fas {
-          opacity: 1;
-          transform:scale(1.05);
-        }
-          &:hover .far {
-          opacity: 0;
+    .fas {
+        color: transparent;
+        background-image:linear-gradient(0deg,$primary 0%,$secondary 100%); 
+        background-clip:text;
+        -webkit-background-clip:text;
+        position: absolute;
+        opacity: 0;
+        transition: all 500ms;
       }
+      &:hover .fas {
+        opacity: 1;
+        transform:scale(1.05);
+      }
+      &:hover .far {
+      opacity: 0;
     }
   }
+}
