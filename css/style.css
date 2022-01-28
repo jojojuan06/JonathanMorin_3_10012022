@@ -111,15 +111,14 @@
 }
 .loader_section__text p {
   font-size: 50px;
-  color: black;
 }
 .loader_section__text {
   font-family: "Shrikhand", "cursive";
   padding: 0.5rem;
+  background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .loader_section__quart {
   margin-right: 16px;
@@ -447,14 +446,6 @@ main h1 {
   animation: spin_checking 1s ease;
 }
 
-.card_item_price {
-  display: flex;
-  margin-left: auto;
-  margin-right: 16px;
-  align-self: center;
-  font-weight: 700;
-}
-
 .card_checking {
   display: flex;
   margin-right: -65px;
@@ -480,6 +471,14 @@ main h1 {
 }
 .card_checking_icon {
   display: flex;
+}
+
+.card_item_price {
+  display: flex;
+  margin-left: auto;
+  margin-right: 16px;
+  align-self: center;
+  font-weight: 700;
 }
 
 .btn {

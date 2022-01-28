@@ -1,64 +1,55 @@
-.card_Page_img 
-{
-    max-width: 100%;
-    max-height: 512px;
-    width: 100%;
-    object-fit: cover;   
+.card_Page_img {
+    max-width:100%;
+    max-height:512px;
+    width:100%;
+    object-fit:cover;   
 }
-.fa-arrow-left 
-{
+.fa-arrow-left {
     @include display-center;
-    position: absolute;
-    left: 32px;
-    height: 32px;
-    width: 32px;
-    top: 42%;
-    align-items: center;
-    font-size: 19.2px;
-    color: #000;  
-    cursor: pointer 
+    position:absolute;
+    left:32px;
+    height:32px;
+    width:32px;
+    top:42%;
+    align-items:center;
+    font-size:19.2px;
+    color:#000;  
+    cursor:pointer 
 }
-.card_menu_container    
-{
-    margin: -64px 0px 0px 0px;
-    border-radius: 30px 30px 0 0;
-    background-color: $card_menu_color;
-    position: relative;
-&_list
-    {
+.card_menu_container {
+    margin:-64px 0px 0px 0px;
+    border-radius:30px 30px 0 0;
+    background-color:$card_menu_color;
+    position:relative;
+    &_list {
         @include display-center;
         flex-wrap: wrap;
         margin: auto 30px;
     }
 }
-.card_header
-{
+.card_header {
     padding: 16px 0 0 16px;
     @include display-center;
     align-items: center;
     h2 {
-    font-family: Shrikhand,"cursive"; 
+        font-family: Shrikhand,"cursive"; 
     } 
 }
-.card_order
-{
+.card_order {
     text-decoration: none;
     @include display-center;
     padding: 3rem 0;  
 }
-.card_sub_menu  
-{
-        flex-grow: 1;
-        width: 100%;
-        margin: 0 auto;
-        min-width: 275px;
-    h2
-        {
-            position: relative;  
-            font-weight: normal; 
-            font-size: 16px;
-        &::before 
-        {
+.card_sub_menu  {
+    flex-grow: 1;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 275px;
+    h2 {
+        position: relative;  
+        font-weight: normal; 
+        font-size: 16px;
+        &::before {
             content: "";
             width: 42px;
             height: 3px;
@@ -70,8 +61,7 @@
         }
     }
 }
-.card_list_item
-{
+.card_list_item {
     display: flex;
     overflow: hidden;
     padding-left: 16px;
@@ -82,41 +72,27 @@
     box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
     cursor: pointer;
     height:70px;
-    max-height: 70px;
-    // max-width: 300px;  
-    & p {
-            margin: 0;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-    & h3
-        {
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            margin:0;
-            overflow: hidden;
-        }
-    &_head
-            {
-            overflow: hidden;
-            }
-    &:hover .card_checking 
-            {
-                margin:0;  
-            }
+    max-height:70px; 
+    p {
+        margin: 0;
+        @include text-space;
+        overflow: hidden;
+    }
+    h3 {
+        @include text-space;
+        margin:0;
+        overflow: hidden;
+    }
+    &_head {
+         overflow: hidden;
+     }
+    &:hover .card_checking {
+        margin:0;  
+    }
     &:hover .card_checking_icon {
-                animation: spin_checking 1s ease;
-            } 
-}
-.card_item_price
-{
-    display: flex;
-    margin-left: auto;
-    margin-right: 16px;
-    align-self: center;
-    font-weight: 700;
-}   
+        animation: spin_checking 1s ease;
+    } 
+}  
 .card_checking
 {
     display:flex;
@@ -140,9 +116,15 @@
         border-radius: 100px;
         height: 25.6px;
         width: 25.6px;
-        }
-        &_icon
-        {
-            display: flex;  
-        }
     }
+    &_icon {
+        display: flex;  
+    }
+}
+.card_item_price {
+    display: flex;
+    margin-left: auto;
+    margin-right: 16px;
+    align-self: center;
+    font-weight: 700;
+} 

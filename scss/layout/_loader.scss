@@ -15,17 +15,16 @@
       text-align:center;
       margin:auto;
     }
-  &__text p { 
-      font-size:50px;
-      color:black;
-    }
+    &__text p { 
+        font-size:50px;
+      }
   &__text {
       font-family: "Shrikhand", "cursive";
       padding:0.5rem;
+      background:linear-gradient($primary , $secondary);
       background-clip: text;
-      background: -webkit-linear-gradient($primary , $secondary);
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      color: transparent;
     }
   &__quart { 
     margin-right:16px;  

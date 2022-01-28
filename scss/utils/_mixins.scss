@@ -1,12 +1,16 @@
 // Les mixins sont très similaires aux variables, mais au lieu de ne stocker que des valeurs, ils stockent des blocs de code entiers.
-@mixin display-center 
-{
+@mixin display-center {
     display: flex;
     justify-content: center;
 }
-
-@mixin button-background 
-{
+@mixin button-background {
     background-image: linear-gradient(
     0deg,$primary,$secondary);
 }
+// crée une image qui est un dégradé entre deux ou plusieurs couleurs le long d'une ligne droite.
+
+@mixin text-space {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+// ellipsis rognage du text , white-space ne wrap pas
