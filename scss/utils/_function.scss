@@ -4,6 +4,7 @@
 .card_list_item {
     animation: menu_item  0.5s both;    
 }
+// L'animation respectera les règles qui s'appliquent à forwards et backwards, entraînant ainsi l'extension des propriétés de l'animation dans les deux directions.
 
 @for $i from 1 through 10 {
     .card_list_item.item-#{$i}

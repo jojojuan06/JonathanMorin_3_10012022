@@ -1,45 +1,45 @@
 /* MOBIL FIRST MEDIA QUERIES*/
 
 @media screen and (min-width:768px) {
-.tutorial {
-    ol {
-        justify-content: center;
-        flex-direction:row;
-    }
-    &__list {
-        flex-direction:row;
-    }  
-    &__title {
-        @include display-center;
-        align-items: center;
-        margin: 0px 0px 18px;
-        text-align: center;
-    }           
-}
-.card_header {
-    justify-content: center;
-    h2  {
-        margin:0px;
-    }
-}
-.card_menus {
-    h2 {
-        @include display-center;
-    }
-    .card {
-        flex-grow: 0;
-    }
-}
-.card_sub_menu {
-    max-width: 384px;
-}
-.loader_section {
+    .tutorial {
+        ol {
+            justify-content: center;
+            flex-direction:row;
+        }
+        &__list {
+            flex-direction:row;
+        }  
         &__title {
-        display: flex; 
-        flex-direction: row; 
+            @include display-center;
+            align-items: center;
+            margin: 0px 0px 18px;
+            text-align: center;
+        }           
     }
-    &__point {
-        display:flex; 
-        margin:0;
+    .card_header {
+        justify-content: center;
+        h2  {
+            margin:0px;
+        }
     }
-}}
+    .card_menus {
+        h2 {
+            @include display-center;
+        }
+        .card {
+            flex-grow: 0;
+        }
+    }
+    .card_sub_menu {
+        max-width: 384px;
+    }
+    .loader_section {
+            &__title {
+            display: flex; 
+            flex-direction: row; 
+        }
+        &__point {
+            display:flex; 
+            margin:0;
+        }
+}   }
