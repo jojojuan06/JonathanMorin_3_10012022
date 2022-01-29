@@ -195,6 +195,7 @@
 .header__logo {
   font-family: "Shrikhand", "cursive";
   color: initial;
+  font-size: 29px;
 }
 .header_page {
   padding: 16px;
