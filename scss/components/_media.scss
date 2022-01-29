@@ -14,7 +14,11 @@
             align-items: center;
             margin: 0px 0px 18px;
             text-align: center;
-        }           
+        }
+        &__menu {
+            max-width:92%;
+            margin:auto; 
+        }            
     }
     .card_header {
         justify-content: center;

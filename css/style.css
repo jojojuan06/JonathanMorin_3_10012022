@@ -611,6 +611,10 @@ main h1 {
     margin: 0px 0px 18px;
     text-align: center;
   }
+  .tutorial__menu {
+    max-width: 92%;
+    margin: auto;
+  }
 
   .card_header {
     justify-content: center;
