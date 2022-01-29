@@ -73,7 +73,8 @@
     box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
     cursor: pointer;
     height:70px;
-    max-height:70px; 
+    max-height:70px;
+    animation:menu_item  0.5s both;  
     p {
         margin: 0;
         @include text-space;

@@ -1,8 +1,4 @@
 @charset "UTF-8";
-.card_list_item {
-  animation: menu_item 0.5s both;
-}
-
 .card_list_item.item-1 {
   animation-delay: 0.1s;
 }
@@ -423,6 +419,7 @@ main h1 {
   cursor: pointer;
   height: 70px;
   max-height: 70px;
+  animation: menu_item 0.5s both;
 }
 .card_list_item p {
   margin: 0;
