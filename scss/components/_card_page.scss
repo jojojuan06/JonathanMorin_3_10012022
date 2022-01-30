@@ -122,6 +122,13 @@
     &__icon {
         animation: spin_checking 1s ease;
         }
+    }
+    &--price{
+        display: flex;
+        margin-left: auto;
+        margin-right: 16px;
+        align-self: center;
+        font-weight: 700;
     } 
 }
 // animation checking  
@@ -150,11 +157,4 @@
     &__icon {
         display: flex;  
     }
-}
-.card_item_price {
-    display: flex;
-    margin-left: auto;
-    margin-right: 16px;
-    align-self: center;
-    font-weight: 700;
 } 

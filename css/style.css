@@ -445,6 +445,13 @@ main h1 {
 .card_list_item:hover .card_checking__icon {
   animation: spin_checking 1s ease;
 }
+.card_list_item--price {
+  display: flex;
+  margin-left: auto;
+  margin-right: 16px;
+  align-self: center;
+  font-weight: 700;
+}
 
 .card_checking {
   display: flex;
@@ -471,14 +478,6 @@ main h1 {
 }
 .card_checking__icon {
   display: flex;
-}
-
-.card_item_price {
-  display: flex;
-  margin-left: auto;
-  margin-right: 16px;
-  align-self: center;
-  font-weight: 700;
 }
 
 .btn {
