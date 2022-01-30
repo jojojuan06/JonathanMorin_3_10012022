@@ -2,14 +2,11 @@
 
 @media screen and (min-width:768px) {
     .tutorial {
-        ol {
+        div &__list  ol {
             justify-content: center;
             flex-direction:row;
-        }
-        &__list {
-            flex-direction:row;
         }  
-        &__title {
+        &__title  {
             @include display-center;
             align-items: center;
             margin: 0px 0px 18px;
@@ -18,7 +15,7 @@
         &__menu {
             max-width:92%;
             margin:auto; 
-        }            
+        }
     }
     .card_header {
         justify-content: center;
