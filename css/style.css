@@ -331,7 +331,7 @@ main h1 {
   cursor: pointer;
 }
 
-.card_menu_container_list {
+.card_menu {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -437,7 +437,7 @@ main h1 {
   margin: 0;
   overflow: hidden;
 }
-.card_list_item_head {
+.card_list_item__head {
   overflow: hidden;
 }
 .card_list_item:hover .card_checking {

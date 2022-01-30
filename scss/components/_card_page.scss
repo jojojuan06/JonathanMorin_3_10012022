@@ -16,7 +16,7 @@
     color:#000;  
     cursor:pointer 
 }
-.card_menu_container_list {
+.card_menu {
      @include display-center;
     flex-wrap: wrap;
     margin: auto 30px;
@@ -113,7 +113,7 @@
         margin:0;
         overflow: hidden;
     }
-    &_head {
+    &__head {
         overflow: hidden;
     }
     &:hover .card_checking {
