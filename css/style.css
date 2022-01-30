@@ -317,32 +317,6 @@ main {
   display: flex;
   flex-direction: column;
 }
-.card_menus__header--heart {
-  display: flex;
-  position: relative;
-  align-self: auto;
-  margin-left: 16px;
-}
-.card_menus__header--heart i {
-  font-size: 24px;
-  cursor: pointer;
-}
-.card_menus__header--heart .fas {
-  color: transparent;
-  background-image: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  position: absolute;
-  opacity: 0;
-  transition: all 500ms;
-}
-.card_menus__header--heart:hover .fas {
-  opacity: 1;
-  transform: scale(1.05);
-}
-.card_menus__header--heart:hover .far {
-  opacity: 0;
-}
 
 .card_Page_img {
   max-width: 100%;
@@ -380,6 +354,32 @@ main {
 }
 .card_header h2 {
   font-family: Shrikhand, "cursive";
+}
+.card_header--heart {
+  display: flex;
+  position: relative;
+  align-self: auto;
+  margin-left: 16px;
+}
+.card_header--heart i {
+  font-size: 24px;
+  cursor: pointer;
+}
+.card_header--heart .fas {
+  color: transparent;
+  background-image: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: absolute;
+  opacity: 0;
+  transition: all 500ms;
+}
+.card_header--heart:hover .fas {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.card_header--heart:hover .far {
+  opacity: 0;
 }
 
 .card_order {
