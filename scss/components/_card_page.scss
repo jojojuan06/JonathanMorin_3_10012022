@@ -90,46 +90,48 @@
     padding: 3rem 0;  
 }
 // animation card item
-.card_list_item {
-    display: flex;
-    overflow: hidden;
-    padding-left: 16px;
-    align-items: center;
-    background-color: $card_color;
-    border-radius: 12px;
-    margin: 16px 0;
-    box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
-    cursor: pointer;
-    height:70px;
-    max-height:70px;
-    animation:menu_item  0.5s both;  
-    p {
-        margin: 0;
-        @include text-space;
-        overflow: hidden;
-    }
-    h3 {
-        @include text-space;
-        margin:0;
-        overflow: hidden;
-    }
-    &__head {
-        overflow: hidden;
-    }
-    &:hover .card_checking {
-        margin:0;  
-    
-    &__icon {
-        animation: spin_checking 1s ease;
-        }
-    }
-    &--price{
+.card_list{
+    &_item {
         display: flex;
-        margin-left: auto;
-        margin-right: 16px;
-        align-self: center;
-        font-weight: 700;
-    } 
+        overflow: hidden;
+        padding-left: 16px;
+        align-items: center;
+        background-color: $card_color;
+        border-radius: 12px;
+        margin: 16px 0;
+        box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);
+        cursor: pointer;
+        height:70px;
+        max-height:70px;
+        animation:menu_item  0.5s both;  
+        p {
+            margin: 0;
+            @include text-space;
+            overflow: hidden;
+        }
+        h3 {
+            @include text-space;
+            margin:0;
+            overflow: hidden;
+        }
+        &__head {
+            overflow: hidden;
+        }
+        &:hover .card_checking {
+            margin:0;  
+        
+        &__icon {
+            animation: spin_checking 1s ease;
+            }
+        }
+        &--price{
+            display: flex;
+            margin-left: auto;
+            margin-right: 16px;
+            align-self: center;
+            font-weight: 700;
+        } 
+    }
 }
 // animation checking  
 .card_checking {
