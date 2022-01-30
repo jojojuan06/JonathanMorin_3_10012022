@@ -124,6 +124,7 @@
 .loader_section__quart:after {
   content: "";
   position: absolute;
+  /* loader spin*/
   top: -6px;
   left: -6px;
   bottom: -6px;
@@ -308,17 +309,17 @@ main h1 {
   display: flex;
   flex-direction: column;
 }
-.card_menus__header-heart {
+.card_menus__header--heart {
   display: flex;
   position: relative;
   align-self: auto;
   margin-left: 16px;
 }
-.card_menus__header-heart i {
+.card_menus__header--heart i {
   font-size: 24px;
   cursor: pointer;
 }
-.card_menus__header-heart .fas {
+.card_menus__header--heart .fas {
   color: transparent;
   background-image: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   background-clip: text;
@@ -327,11 +328,11 @@ main h1 {
   opacity: 0;
   transition: all 500ms;
 }
-.card_menus__header-heart:hover .fas {
+.card_menus__header--heart:hover .fas {
   opacity: 1;
   transform: scale(1.05);
 }
-.card_menus__header-heart:hover .far {
+.card_menus__header--heart:hover .far {
   opacity: 0;
 }
 
@@ -440,7 +441,7 @@ main h1 {
 .card_list_item:hover .card_checking {
   margin: 0;
 }
-.card_list_item:hover .card_checking_icon {
+.card_list_item:hover .card_checking__icon {
   animation: spin_checking 1s ease;
 }
 
@@ -467,7 +468,7 @@ main h1 {
   height: 25.6px;
   width: 25.6px;
 }
-.card_checking_icon {
+.card_checking__icon {
   display: flex;
 }
 

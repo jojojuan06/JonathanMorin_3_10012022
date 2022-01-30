@@ -90,9 +90,10 @@
     }
     &:hover .card_checking {
         margin:0;  
-    }
-    &:hover .card_checking_icon {
+    
+    &__icon {
         animation: spin_checking 1s ease;
+        }
     } 
 }
 // animation checking  
@@ -118,7 +119,7 @@
         height: 25.6px;
         width: 25.6px;
     }
-    &_icon {
+    &__icon {
         display: flex;  
     }
 }
