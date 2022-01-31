@@ -16,8 +16,8 @@
     margin:auto;
   }
   &__text p { 
-      font-size:50px;
-    }
+    font-size:50px;
+  }
   &__text {
     font-family: "Shrikhand", "cursive";
     padding:0.5rem;
@@ -59,29 +59,29 @@
   &__point {
     display:flex; 
     margin: auto;
-  
-  &--1 {
+    
+    &--1 {
       background-color:$primary;
       font-size:8px;
       color:transparent;
       animation-name:point;
       animation-delay:0s;
     }
-  &--2 {
+    &--2 {
       background-color:$secondary; 
       font-size:8px;
       color:transparent;
       animation-name:point;
       animation-delay:0.4s;
     }
-  &--3 {
+    &--3 {
       background-color:$primary;
       font-size:8px;
       color:transparent;
       animation-name:point;
       animation-delay:0.6s;
     }
-  &--1,&--2,&--3 {
+    &--1,&--2,&--3 {
       display:inline-block;
       align-self:center;
       justify-content:space-around; 

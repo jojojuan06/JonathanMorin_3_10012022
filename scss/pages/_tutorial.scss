@@ -10,7 +10,7 @@
   }
   &__title {
     margin:0;  
-  &__sub {
+    &__sub {
       font-weight:300;
       padding-bottom:37px;
       width:85%;
@@ -23,9 +23,9 @@
 .tutorial {
   padding:32px 0px;
   &__menu {
-        @include display-center;
-        flex-direction: column;
-      }
+    @include display-center;
+    flex-direction: column;
+  }
   &__container {
     margin: auto;
   }
@@ -61,7 +61,7 @@
         position: absolute;
         left: -12px;
       }
-   }
+    }
   }
   &__list {
     @include display-center;
@@ -71,8 +71,8 @@
       &:hover {
         background-color:#f5edff;
         cursor: pointer;
-          & .fas {
-            color: $primary;
+        & .fas {
+          color: $primary;
         }   
       }  
     } 
@@ -82,6 +82,6 @@
   }
 }
 .fa-mobile-alt.fas,.fa-list-ul.fas,.fa-store.fas {
-    margin-right:16px;
-    color: #7e7e7e;
+  margin-right:16px;
+  color: #7e7e7e;
 }

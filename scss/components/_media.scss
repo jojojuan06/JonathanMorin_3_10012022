@@ -19,12 +19,12 @@
     }
     .loader {
         &__title {
-        display: flex; 
-        flex-direction: row; 
+            display: flex; 
+            flex-direction: row; 
         }
         &__point {
-        display:flex; 
-        margin:0;
+            display:flex; 
+            margin:0;
         }
     }
     .card_menus {                                  /*index menus */

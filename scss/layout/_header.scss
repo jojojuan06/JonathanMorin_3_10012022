@@ -6,10 +6,10 @@
   position: relative;
   z-index: 1;
   a
-    {
-      text-decoration: none;
-    }
-    &__logo{
+  {
+    text-decoration: none;
+  }
+  &__logo{
     font-family: 'Shrikhand',"cursive";
     color: initial;
     font-size: 29px;
@@ -20,29 +20,28 @@
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);   
     &__card
     {
-    @include display-center;  
+      @include display-center;  
     }
   }
 }
 .local {
-    @include display-center;
-    background-color: #f3f3f3;
-    font-size: 19.2px;
-    position: relative;
-  i
-   {
+  @include display-center;
+  background-color: #f3f3f3;
+  font-size: 19.2px;
+  position: relative;
+  i {
     display: flex; 
     margin: auto 16px; 
     align-self: center;
     font-size: 16.2px;
-   }
-&__text{
+  }
+  &__text{
     display: flex;
     color: #4b4b4b;
     flex-direction: row;
     font-weight: 700;
-  h2{
-  font-size: 16.2px;  
-  } 
+    h2{
+      font-size: 16.2px;  
+    } 
   } 
 }
