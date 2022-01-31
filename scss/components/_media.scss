@@ -27,10 +27,8 @@
             margin:0;
         }
     }
-    .card_menus {                                  /*index menus */
-        h2 {
-            @include display-center;
-        }
+    .card_menus h2 {                                  /*index menus */
+        @include display-center;
     }
     .card_header {
         justify-content: center;

@@ -579,10 +579,8 @@ main h1 {
     margin: 0;
   }
 
-  .card_menus {
-    /*index menus */
-  }
   .card_menus h2 {
+    /*index menus */
     display: flex;
     justify-content: center;
   }
