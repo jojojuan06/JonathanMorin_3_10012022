@@ -103,7 +103,7 @@ main h1 {
     visibility: hidden;
   }
 }
-.loader_section {
+.loader {
   display: flex;
   background-color: white;
   height: 100%;
@@ -113,7 +113,7 @@ main h1 {
   opacity: 1;
   animation: 2s fade-in linear 1s forwards, 1s fade-out linear 3s forwards;
 }
-.loader_section__container {
+.loader__container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -121,10 +121,10 @@ main h1 {
   text-align: center;
   margin: auto;
 }
-.loader_section__text p {
+.loader__text p {
   font-size: 50px;
 }
-.loader_section__text {
+.loader__text {
   font-family: "Shrikhand", "cursive";
   padding: 0.5rem;
   background: linear-gradient(#9356DC, #FF79DA);
@@ -132,12 +132,12 @@ main h1 {
   -webkit-background-clip: text;
   color: transparent;
 }
-.loader_section__quart {
+.loader__quart {
   margin-right: 16px;
   border-radius: 50px;
   border: 6px solid rgba(255, 255, 255, 0.4);
 }
-.loader_section__quart:after {
+.loader__quart:after {
   content: "";
   position: absolute;
   /* loader spin*/
@@ -150,7 +150,7 @@ main h1 {
   border-top-color: #2bb391;
   animation: 1.5s spin linear infinite;
 }
-.loader_section .loader {
+.loader__span {
   margin: 0;
   width: 50px;
   height: 50px;
@@ -158,11 +158,10 @@ main h1 {
   flex-wrap: wrap;
   position: relative;
 }
-.loader_section__title {
+.loader__title {
   display: flex;
   flex-direction: column;
 }
-
 .loader__point {
   display: flex;
   margin: auto;

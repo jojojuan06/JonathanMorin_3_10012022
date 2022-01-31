@@ -1,4 +1,4 @@
-.loader_section {
+.loader {
   display:flex;
   background-color:rgba(255, 255, 255, 1);
   height:100%;
@@ -8,24 +8,24 @@
   opacity: 1;
   animation:  2s fade-in  linear 1s forwards , 1s fade-out linear 3s forwards;
   &__container {
-      display:flex;
-      flex-direction: column;
-      flex-wrap:wrap;
-      align-items:center;
-      text-align:center;
-      margin:auto;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items:center;
+    text-align:center;
+    margin:auto;
+  }
+  &__text p { 
+      font-size:50px;
     }
-    &__text p { 
-        font-size:50px;
-      }
   &__text {
-      font-family: "Shrikhand", "cursive";
-      padding:0.5rem;
-      background:linear-gradient($primary , $secondary);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-    }
+    font-family: "Shrikhand", "cursive";
+    padding:0.5rem;
+    background:linear-gradient($primary , $secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
   &__quart { 
     margin-right:16px;  
     border-radius:50px;
@@ -44,20 +44,19 @@
       animation:1.5s spin linear infinite;
     } 
   }
-  & .loader {
-      margin:0;
-      width:50px;
-      height:50px;
-      display:flex;
-      flex-wrap:wrap;
-      position:relative;
-    }
-  &__title {
-      display: flex;
-      flex-direction: column;  
-    }
+  &__span {
+    margin:0;
+    width:50px;
+    height:50px;
+    display:flex;
+    flex-wrap:wrap;
+    position:relative;
   }
-.loader__point {
+  &__title {
+    display: flex;
+    flex-direction: column;  
+  }
+  &__point {
     display:flex; 
     margin: auto;
   
@@ -83,13 +82,14 @@
       animation-delay:0.6s;
     }
   &--1,&--2,&--3 {
-    display:inline-block;
-    align-self:center;
-    justify-content:space-around; 
-    margin-left:2px;
-    margin-right:2px;
-    border-radius:50%;
-    width:5px;  
-    animation:point 1.5s ease-in-out infinite;
+      display:inline-block;
+      align-self:center;
+      justify-content:space-around; 
+      margin-left:2px;
+      margin-right:2px;
+      border-radius:50%;
+      width:5px;  
+      animation:point 1.5s ease-in-out infinite;
+    }
   }
 }
