@@ -586,9 +586,6 @@ main h1 {
     display: flex;
     justify-content: center;
   }
-  .card_menus .card {
-    flex-grow: 0;
-  }
 
   .card_header {
     justify-content: center;

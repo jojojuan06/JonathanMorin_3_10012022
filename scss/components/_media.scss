@@ -31,9 +31,6 @@
         h2 {
             @include display-center;
         }
-        .card {
-            flex-grow: 0;
-        }
     }
     .card_header {
         justify-content: center;
