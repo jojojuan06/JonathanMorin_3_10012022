@@ -17,23 +17,6 @@
             margin:auto; 
         }
     }
-    .card_header {
-        justify-content: center;
-        h2  {
-            margin:0px;
-        }
-    }
-    .card_menus {
-        h2 {
-            @include display-center;
-        }
-        .card {
-            flex-grow: 0;
-        }
-    }
-    .card_menu__sub {
-        max-width: 384px;
-    }
     .loader {
         &__title {
         display: flex; 
@@ -44,4 +27,22 @@
         margin:0;
         }
     }
+    .card_menus {                                  /*index menus */
+        h2 {
+            @include display-center;
+        }
+        .card {
+            flex-grow: 0;
+        }
+    }
+    .card_header {
+        justify-content: center;
+        h2  {
+            margin:0px;
+        }
+    }
+    .card_menu__sub {                             /*page menu*/
+        max-width: 384px;
+    }
+    
 }   

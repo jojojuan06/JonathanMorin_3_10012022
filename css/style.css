@@ -571,13 +571,18 @@ main h1 {
     margin: auto;
   }
 
-  .card_header {
-    justify-content: center;
+  .loader__title {
+    display: flex;
+    flex-direction: row;
   }
-  .card_header h2 {
-    margin: 0px;
+  .loader__point {
+    display: flex;
+    margin: 0;
   }
 
+  .card_menus {
+    /*index menus */
+  }
   .card_menus h2 {
     display: flex;
     justify-content: center;
@@ -586,17 +591,16 @@ main h1 {
     flex-grow: 0;
   }
 
-  .card_menu__sub {
-    max-width: 384px;
+  .card_header {
+    justify-content: center;
+  }
+  .card_header h2 {
+    margin: 0px;
   }
 
-  .loader__title {
-    display: flex;
-    flex-direction: row;
-  }
-  .loader__point {
-    display: flex;
-    margin: 0;
+  .card_menu__sub {
+    /*page menu*/
+    max-width: 384px;
   }
 }
 .menu {
