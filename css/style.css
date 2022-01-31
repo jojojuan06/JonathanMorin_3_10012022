@@ -133,9 +133,14 @@ main h1 {
   color: transparent;
 }
 .loader__quart {
-  margin-right: 16px;
   border-radius: 50px;
   border: 6px solid rgba(255, 255, 255, 0.4);
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
 }
 .loader__quart:after {
   content: "";
@@ -149,14 +154,6 @@ main h1 {
   border: 6px solid rgba(0, 0, 0, 0.25);
   border-top-color: #2bb391;
   animation: 1.5s spin linear infinite;
-}
-.loader__span {
-  margin: 0;
-  width: 50px;
-  height: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  position: relative;
 }
 .loader__title {
   display: flex;
