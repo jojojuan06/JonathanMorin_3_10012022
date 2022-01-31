@@ -34,14 +34,14 @@
     .card_menu__sub {
         max-width: 384px;
     }
-    .loader_section {
-            &__title {
-            display: flex; 
-            flex-direction: row; 
-        }    
-    }
-    .loader__point {
+    .loader {
+        &__title {
+        display: flex; 
+        flex-direction: row; 
+        }
+        &__point {
         display:flex; 
         margin:0;
+        }
     }
 }   

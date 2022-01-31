@@ -590,11 +590,10 @@ main h1 {
     max-width: 384px;
   }
 
-  .loader_section__title {
+  .loader__title {
     display: flex;
     flex-direction: row;
   }
-
   .loader__point {
     display: flex;
     margin: 0;
