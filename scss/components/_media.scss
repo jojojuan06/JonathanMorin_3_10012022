@@ -38,9 +38,10 @@
             &__title {
             display: flex; 
             flex-direction: row; 
-        }
-        &__point {
-            display:flex; 
-            margin:0;
-        }
-}   }
+        }    
+    }
+    .loader__point {
+        display:flex; 
+        margin:0;
+    }
+}   
