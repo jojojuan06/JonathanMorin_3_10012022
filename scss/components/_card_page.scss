@@ -1,6 +1,8 @@
 .card_Page_img {
     max-width:100%;
     max-height:250px;
+    position: relative;
+    top:2px;
     width:100%;
     object-fit:cover;   
 }
@@ -43,11 +45,11 @@
     }
 }
 .card_section {
-    border-radius:40px 40px 0 0;
+    border-radius:35px 35px 0 0;
     background-color:$card_menu_color;
     position:relative;
     margin-bottom: -30px;
-    top: -38px;
+    top: -30px;
 }
 .card_header {
     padding: 16px 0 0 16px;
